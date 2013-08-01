@@ -1,0 +1,4 @@
+# 2 percent is pretty close.
+
+SUBSYSTEM=="power_supply", KERNEL=="BAT0", TEST=="charge_full", ATTR{alarm}="155740"
+SUBSYSTEM=="power_supply", KERNEL=="BAT0", TEST=="energy_full", ATTR{alarm}="1728800"

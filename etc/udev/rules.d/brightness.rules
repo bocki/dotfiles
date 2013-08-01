@@ -1,0 +1,1 @@
+SUBSYSTEM=="backlight", KERNEL=="acpi_video0", ACTION=="add", ATTR{brightness}="8"

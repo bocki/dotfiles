@@ -1,0 +1,3 @@
+# SUBSYSTEM=="serio", DRIVER=="psmouse", ATTR{protocol}=="TPPS/2", WAIT_FOR="press_to_select", ATTR{press_to_select}="1", ATTR{ztime}="25", ATTR{sensitivity}="160"
+
+SUBSYSTEM=="input", ATTR{name}=="TPPS/2 IBM TrackPoint", ATTR{../../press_to_select}="1", ATTR{../../ztime}="25", ATTR{../../sensitivity}="160"

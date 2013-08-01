@@ -1,0 +1,5 @@
+# ACTION=="add", SUBSYSTEM=="rfkill", ATTR{name}=="tpacpi_bluetooth_sw", ATTR{state}="0"
+# ACTION=="add", 
+ACTION=="add", SUBSYSTEM=="rfkill", ATTR{name}=="tpacpi_bluetooth_sw", RUN+="/usr/bin/rfkill block bluetooth"
+# ACTION=="add", 
+# SUBSYSTEM=="platform", KERNEL=="thinkpad_acpi", TEST=="bluetooth_enable", ATTR{bluetooth_enable}="0"

@@ -1,0 +1,6 @@
+# SUBSYSTEM=="cpu", KERNEL=="cpu0", TEST=="../intel_pstate/no_turbo", RUN+="/bin/sh -c '/usr/bin/echo 1 > %S%p/../intel_pstate/no_turbo'"
+
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="0", RUN+="/usr/bin/sh -c '/usr/bin/echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo'"
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="1", RUN+="/usr/bin/sh -c '/usr/bin/echo 0 > /sys/devices/system/cpu/intel_pstate/no_turbo'"
+
+# TEST=="intel_pstate/no_turbo" 
