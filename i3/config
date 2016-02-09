@@ -38,7 +38,7 @@ bindsym $mod+Shift+c kill
 # start dmenu (a program launcher)
 # bindsym $mod+space exec dmenu_run
 # bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu='dmenu -i -hist ~/.dmenu.history -fn -*-terminus-*-*-*-*-12-*-*-*-*-*-iso10646-* -h 18'
-bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu='dmenu -i -hist ~/.dmenu.history -fn Terminus-8 -h 18'
+bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu='dmenu -i -hist ~/.dmenu.history -fn Terminus-8 -h 18 -nb \#272822 -nf \#f8f8f2 -sb \#a6e22e -sf \#272822'
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -181,10 +181,10 @@ bar {
 #client.urgent           #fd971f #f4bf75 #278222 #f92672
 
 
-client.focused		#49483e #49483e #a6e22e #f92672
-client.focused_inactive #383830 #383830 #a59f85 #f92672
-client.unfocused 	#383830 #383830 #75715e #f92672
-client.urgent	 	#f92672 #f92672 #f8f8f2 #f92672
+client.focused		#49483e #49483e #a6e22e #75715e
+client.focused_inactive #383830 #383830 #a59f85 #75715e
+client.unfocused	#383830 #383830 #75715e #75715e
+client.urgent		#f92672 #f92672 #f8f8f2 #75715e
 
 
 # client.focused          #900939 #c03969 #e0e0f0 #2e9ef4
