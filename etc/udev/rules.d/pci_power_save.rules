@@ -1,2 +1,5 @@
+ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x1033", ATTR{device}=="0x0194", GOTO="pci_powersave_rules_end"
+
 ACTION=="add", SUBSYSTEM=="pci", ATTR{power/control}="auto"
 
+LABEL="pci_powersave_rules_end"
