@@ -454,3 +454,10 @@ URxvt*color21:      base06
 URxvt.colorIT: base0A
 URxvt.colorBD: base08
 URxvt.colorUL: base0B
+
+URxvt.perl-ext: default,matcher
+URxvt.url-launcher: xdg-open
+URxvt.keysym.C-Delete: perl:matcher:last
+URxvt.keysym.M-Delete: perl:matcher:list
+URxvt.keysym.M-End: perl:matcher:select
+URxvt.matcher.button: 1
